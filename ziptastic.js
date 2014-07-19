@@ -1,6 +1,6 @@
 document.observe('dom:loaded',function(){
 	$$('input.zip').invoke('observe', 'change', function(evt) {
-		new Ajax.Request('http://zip.elevenbasetwo.com',{
+		new Ajax.Request('http://zip.getziptastic.com',{
 			method: 'get',
 			parameters: {zip:$F(this)}, 
 			onSuccess:function(transport){
